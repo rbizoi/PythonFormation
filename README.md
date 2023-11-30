@@ -13,6 +13,9 @@ conda create -p /home/utilisateur/anaconda3/envs/coursLF python==3.10 ipython ip
 conda activate coursLF
 
 pip install SQLAlchemy==1.4.39 cx_Oracle sql
+pip uninstall matplotlib seaborn
+pip install matplotlib seaborn
+
 ```
 
 
