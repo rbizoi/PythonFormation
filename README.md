@@ -17,7 +17,4 @@ pip uninstall matplotlib seaborn
 pip install matplotlib seaborn
 ```
 
->> ---
-
-
 
