@@ -15,8 +15,6 @@ conda activate coursLF
 pip install SQLAlchemy==1.4.39 cx_Oracle sql
 pip uninstall matplotlib seaborn
 pip install matplotlib seaborn
-
-
 ```
 
 
