@@ -14,7 +14,7 @@ conda activate cours
 
 pip install SQLAlchemy==1.4.39 sql psycopg2 cx_Oracle
 pip uninstall matplotlib seaborn
-pip install matplotlib seaborn
+pip install matplotlib seaborn opencv-python-headless
 ```
 
 ## Linux
@@ -27,7 +27,21 @@ conda activate cours
 
 pip install SQLAlchemy==1.4.39 sql psycopg2 cx_Oracle
 pip uninstall matplotlib seaborn
-pip install matplotlib seaborn
+pip install matplotlib seaborn opencv-python-headless
+```
+
+```
+# sudo apt install openjdk-8-jdk-headless
+# sudo apt-get install libpq-dev python3-dev gcc
+# pip install psycopg2-binary
+
+cat << FIN_FICHIER > /etc/profile.d/java_dev.sh
+#!/bin/bash
+# Configuration Outils
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JRE_HOME=\$JAVA_HOME/jre
+export PATH=\$JAVA_HOME/bin:\$PATH
+FIN_FICHIER
 ```
 
 
