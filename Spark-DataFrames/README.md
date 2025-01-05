@@ -6,5 +6,5 @@
 `export PYSPARK_DRIVER_PYTHON_OPTS=''`<br>
 
 
-`wget https://github.com/rbizoi/PythonFormation/blob/main/Spark-DataFrames/charge_meteo_2024.sh
+`wget https://github.com/rbizoi/PythonFormation/blob/main/Spark-DataFrames/charge_meteo_2024.sh`
 
