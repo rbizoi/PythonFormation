@@ -1,7 +1,7 @@
 #!/bin/bash
 
 repertoire=`pwd`
-for annee in {1996..2023}
+for annee in {1996..2024}
 do
     cd $repertoire
     mkdir $annee
