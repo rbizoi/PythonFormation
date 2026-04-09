@@ -5,43 +5,31 @@
 # Installation 
 https://www.anaconda.com/download
 
-## Windows
 ```
-conda create -n cours python==3.10 ipython ipython-sql jupyter notebook numpy==1.23.5 pandas pyyaml==5.4.1 pyarrow scikit-image scikit-learn matplotlib seaborn tifffile portpicker biopython flatbuffers colour pydot pygraphviz imgaug tifffile imagecodecs
+conda activate root
+conda update --all
+python -m pip install --upgrade pip
+```
+<div style='padding:15px;color:#030aa7;font-size:100%;text-align: left;font-family: Georgia, serif'>Création de l’environnement <b>cours</b> </div>
+<div style='padding:15px;color:#030aa7;font-size:100%;text-align: left;font-family: Georgia, serif'><b>Windows</b> </div>
+
+```
+# conda remove -n cours --all -y
+conda create -n cours -c conda-forge  python==3.12 ipython ipython-sql jupyter notebook numpy pandas pyarrow matplotlib seaborn portpicker biopython flatbuffers redis colour pydot pygraphviz pyyaml pyspark folium scikit-image scikit-learn yellowbrick lightgbm xgboost catboost plotly imgaug tifffile imagecodecs optuna kneed imbalanced-learn
 
 conda activate cours
+```
+
+<div style='padding:15px;color:#030aa7;font-size:100%;text-align: left;font-family: Georgia, serif'><b>Linux</b> </div>
+
+```
 # conda remove -n cours --all -y
-
-#pip install SQLAlchemy==1.4.39 sql psycopg2 cx_Oracle
-pip uninstall matplotlib seaborn
-pip install matplotlib seaborn opencv-python-headless
-```
-
-## Linux
-
-```
-conda create -n cours python==3.10 ipython ipython-sql jupyter notebook numpy==1.23.5 pandas pyyaml==5.4.1 pyarrow scikit-image scikit-learn matplotlib seaborn tifffile portpicker biopython flatbuffers colour pydot pygraphviz imgaug tifffile imagecodecs
+conda create -p /home/utilisateur/anaconda3/envs/cours -c conda-forge  python==3.12 ipython ipython-sql jupyter notebook numpy pandas pyarrow matplotlib seaborn portpicker biopython flatbuffers redis colour pydot pygraphviz pyyaml pyspark folium scikit-image scikit-learn yellowbrick lightgbm xgboost catboost plotly imgaug tifffile imagecodecs optuna kneed imbalanced-learn
 
 conda activate cours
-# conda remove -n cours --all -y
-
-#pip install SQLAlchemy==1.4.39 sql psycopg2 cx_Oracle
-pip uninstall matplotlib seaborn
-pip install matplotlib seaborn opencv-python-headless
 ```
 
-```
-# sudo apt install openjdk-8-jdk-headless
-# sudo apt-get install libpq-dev python3-dev gcc
-# pip install psycopg2-binary
 
-cat << FIN_FICHIER > /etc/profile.d/java_dev.sh
-#!/bin/bash
-# Configuration Outils
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export JRE_HOME=\$JAVA_HOME/jre
-export PATH=\$JAVA_HOME/bin:\$PATH
-FIN_FICHIER
-```
+
 
 
