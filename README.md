@@ -3,7 +3,7 @@
 <img src="https://github.com/rbizoi/PythonFormationCESI/blob/main/images/python-image-logo-940x530.jpeg" width="512">
 
 # Installation 
-https://www.anaconda.com/download
+[https://www.anaconda.com/download](https://www.anaconda.com/download/success?reg=skipped)
 
 ```
 conda activate root
